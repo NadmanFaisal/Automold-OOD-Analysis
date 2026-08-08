@@ -67,18 +67,6 @@ WEIGHTS = {
 # PKL files
 CLEAN_PKL = 'data/sets/nuscenes/nuscenes_infos_temporal_val.pkl'
 
-OUTPUT_PKL_PATHS = [
-    #Fog
-    'data/sets/nuscenes-c/nuScenes-c/Fog/easy/nuscenes_infos_temporal_val.pkl',
-    'data/sets/nuscenes-c/nuScenes-c/Fog/mid/nuscenes_infos_temporal_val.pkl',
-    'data/sets/nuscenes-c/nuScenes-c/Fog/hard/nuscenes_infos_temporal_val.pkl',
-
-    #Snow
-    'data/sets/nuscenes-c/nuScenes-c/Snow/easy/nuscenes_infos_temporal_val.pkl',
-    'data/sets/nuscenes-c/nuScenes-c/Snow/mid/nuscenes_infos_temporal_val.pkl',
-    'data/sets/nuscenes-c/nuScenes-c/Snow/hard/nuscenes_infos_temporal_val.pkl',
-]
-
 AUTOMOLD_OUTPUT_PKL_PATHS = [
     #Fog
     'data/sets/nuscenes-automold/Fog/easy/nuscenes_infos_temporal_val.pkl',

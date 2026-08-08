@@ -58,7 +58,7 @@ for output_path in AUTOMOLD_OUTPUT_PKL_PATHS:
         weather = p.parent.parent.name
         
         # The target str that is replaced into the pkl file to point to the right files
-        target_str = f'./data/nuscenes_automold/{weather}/{severity}'
+        target_str = f'./data/nuscenes-automold/{weather}/{severity}'
         print(f"\nPatching metadata for {weather} ({severity})...")
 
         patched_data = replace_paths(clean_data, target_str)
