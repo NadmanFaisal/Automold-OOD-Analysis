@@ -198,6 +198,7 @@ for CURRENT_WEATHER in "${WEATHERS[@]}"; do
         --bind $PROJECT_DIR/evaluation_results/:/workspace/core_models/BEVFormer/test \
         --pwd /workspace \
         --env PYTHONPATH="/workspace/core_models/BEVFormer" \
+        --env REAL_PROJECT_DIR=$PROJECT_DIR \
         --env OOD_WEATHER=$OOD_WEATHER,OOD_SEVERITY=$OOD_SEVERITY,OOD_TIMESTAMP=$ACTUAL_TIMESTAMP,BASELINE_TIMESTAMP=$BASELINE_ID \
         $CONTAINER \
         python safety_monitor/risk_coverage_evaluator.py

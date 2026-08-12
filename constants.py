@@ -97,10 +97,10 @@ BEVFORMER_TEST_BASE = 'core_models/BEVFormer/test/bevformer_base'
 
 # Maps each (weather, severity) condition to its nuScenes-C ground truth PKL file
 PKL_MAP = {
-    ('Fog',  'easy'): '/workspace/data/sets/nuscenes-automold/Fog/easy/nuscenes_infos_temporal_val.pkl',
-    ('Fog',  'mid'):  '/workspace/data/sets/nuscenes-automold/Fog/mid/nuscenes_infos_temporal_val.pkl',
-    ('Fog',  'hard'): '/workspace/data/sets/nuscenes-automold/Fog/hard/nuscenes_infos_temporal_val.pkl',
-    ('Snow', 'easy'): '/workspace/data/sets/nuscenes-automold/Snow/easy/nuscenes_infos_temporal_val.pkl',
-    ('Snow', 'mid'):  '/workspace/data/sets/nuscenes-automold/Snow/mid/nuscenes_infos_temporal_val.pkl',
-    ('Snow', 'hard'): '/workspace/data/sets/nuscenes-automold/Snow/hard/nuscenes_infos_temporal_val.pkl',
+    ('Fog',  'easy'): 'data/sets/nuscenes-automold/Fog/easy/nuscenes_infos_temporal_val.pkl',
+    ('Fog',  'mid'):  'data/sets/nuscenes-automold/Fog/mid/nuscenes_infos_temporal_val.pkl',
+    ('Fog',  'hard'): 'data/sets/nuscenes-automold/Fog/hard/nuscenes_infos_temporal_val.pkl',
+    ('Snow', 'easy'): 'data/sets/nuscenes-automold/Snow/easy/nuscenes_infos_temporal_val.pkl',
+    ('Snow', 'mid'):  'data/sets/nuscenes-automold/Snow/mid/nuscenes_infos_temporal_val.pkl',
+    ('Snow', 'hard'): 'data/sets/nuscenes-automold/Snow/hard/nuscenes_infos_temporal_val.pkl',
 }
