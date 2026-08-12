@@ -638,7 +638,20 @@ def run_condition(weather, severity, timestamp):
 
     # --- Ground truth ---
     pkl_path = PKL_MAP.get((weather, severity))
-    if not pkl_path or not os.path.exists(pkl_path):
+
+    if not pkl_path:
+        print(f'[!] ({weather}, {severity}) not found in PKL_MAP. Skipping.')
+        return
+
+    # Reach directly into the host machine's REAL project directory to bypass the broken workspace symlink
+    real_project_dir = os.environ.get('REAL_PROJECT_DIR')
+    
+    if not real_project_dir:
+        real_project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    pkl_path = os.path.join(real_project_dir, pkl_path)
+
+    if not os.path.exists(pkl_path):
         print(f'[!] Ground truth PKL not found: {pkl_path}. Skipping.')
         return
 
